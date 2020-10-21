@@ -1,0 +1,32 @@
+body {
+  background-color: azure;
+  text-align: center;
+}
+h1 {
+  color: rgb(44, 0, 85);
+}
+.timer {
+  display: flex;
+  justify-content: center;
+  :not(:last-child) {
+    margin-right: 20px;
+  }
+}
+.field {
+  font-family: Minecart;
+  font-size: 30px;
+  font-weight: normal;
+  background-color: black;
+  color: rgb(30, 163, 30);
+  border: 2px solid;
+  border-radius: 3px;
+  padding: 5px;
+}
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "Minecart";
+  // адрес шрифта и тип
+  src: url("./18315.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
