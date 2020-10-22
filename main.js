@@ -3,14 +3,9 @@ class CountdownTimer {
         this.selector = obj.selector;
         this.targetDate = obj.targetDate;
     }
-//     refs = {
-//     daysValElem: document.querySelector(`${this.selector} [data-value="days"]`),
-//     hoursValElem:document.querySelector(`${this.selector} [data-value="hours"]`),
-//     minsValElem: document.querySelector(`${this.selector} [data-value="mins"]`),
-//     secsValElem: document.querySelector(`${this.selector} [data-value="secs"]`),
-// }
 
     StartCoutn() {
+        console.log(this.targetDate);
     daysValElem= document.querySelector(`${this.selector} [data-value="days"]`),
     hoursValElem=document.querySelector(`${this.selector} [data-value="hours"]`),
     minsValElem= document.querySelector(`${this.selector} [data-value="mins"]`),
@@ -37,9 +32,9 @@ class CountdownTimer {
     return String(value).padStart(2, '0');
 }
 }
-
 const getTime = new CountdownTimer({
   selector: '#timer-1',
   targetDate: new Date('Jan 01, 2021'),
 });
+
 getTime.StartCoutn();
