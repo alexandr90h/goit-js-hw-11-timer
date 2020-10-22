@@ -8,19 +8,30 @@ h1 {
 .timer {
   display: flex;
   justify-content: center;
-  :not(:last-child) {
-    margin-right: 20px;
+  div:not(:last-child) {
+    margin-right: 10px;
   }
 }
 .field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 160px;
   font-family: Minecart;
-  font-size: 30px;
   font-weight: normal;
   background-color: black;
   color: rgb(30, 163, 30);
   border: 2px solid;
   border-radius: 3px;
   padding: 5px;
+}
+.value {
+  font-size: 50px;
+  margin: 0;
+}
+.label {
+  font-size: 20px;
+  margin: 0;
 }
 @font-face {
   // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
